@@ -1,5 +1,22 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{!--
+Basic idea is to end up with something like this and support common input types with the ability
+to override with custom components for things like a date picker which I do not plan to impliment
+in this addon but could easily be swapped in if needed. This would allow the most flexibility
+for consuming apps and give a solid base to build forms with.
+
+{{#composable-form as |form|}}
+  {{#form.field type="text" name="firstName" as |field|}}
+    {{field.label labelText="First Name"}}
+    {{field.input placeholder="John"}}
+  {{/form.field}}
+
+  {{#form.field type="text" name="lastName" as |field|}}
+    {{field.label labelText="Last Name"}}
+    {{field.input placeholder="Doe"}}
+  {{/form.field}}
+
+  <button {{action form.onFormSubmit}}>Sumbit</button>
+{{/composable-form}}
+--}}
 
 {{outlet}}
