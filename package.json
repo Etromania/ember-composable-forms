@@ -5,7 +5,7 @@
   "keywords": [
     "ember-addon"
   ],
-  "license": "MIT",
+  "license": "BSD 2-Clause",
   "author": "",
   "directories": {
     "doc": "doc",
