@@ -18,5 +18,15 @@ for consuming apps and give a solid base to build forms with.
   <button {{action form.onFormSubmit}}>Sumbit</button>
 {{/composable-form}}
 --}}
+<h1>Hello from dummy app</h1>
+
+{{#composable-form as |form|}}
+  {{!--{{#form.field type="text" name="firstName" as |field|}}
+    {{field.label labelText="First Name"}}
+    {{field.input placeholder="John"}}
+  {{/form.field}}--}}
+
+  <button type="submit">Submit</button>
+{{/composable-form}}
 
 {{outlet}}

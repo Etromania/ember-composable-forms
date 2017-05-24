@@ -1,0 +1,1 @@
+export { default } from 'ember-composable-forms/components/composable-form';
